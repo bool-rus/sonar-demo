@@ -21,8 +21,10 @@ public class WelcomeController {
 	}
 	@RequestMapping("/healthcheck")
 	public String healthCheck(Map<String,Object> model) {
-		model.put("text","OK");
+		model.put("text","OKKKKKK");
 		return "plain";
 	}
-
+	public void someChecks(){
+		System.currentTimeMillis();
+	}
 }
